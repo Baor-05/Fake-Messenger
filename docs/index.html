@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger Desktop cho Windows</title>
+    <meta name="description" content="Ứng dụng Messenger Desktop cho Windows, hỗ trợ nhiều tài khoản, thông báo, phím tắt và khay hệ thống.">
+    <meta name="keywords" content="Messenger, Desktop, Windows, Electron, Facebook Messenger">
+    <meta property="og:title" content="Messenger Desktop cho Windows">
+    <meta property="og:description" content="Ứng dụng Messenger Desktop cho Windows.">
+    <link rel="icon" type="image/png" href="../icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <img src="../icon.png" alt="Messenger Logo">
+                <span>Messenger</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#features">Tính năng</a></li>
+                <li><a href="#install">Cài đặt</a></li>
+                <li><a href="#shortcuts">Phím tắt</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Messenger Desktop<br><span class="gradient-text">cho Windows.</span></h1>
+                <p class="hero-desc">Ứng dụng Messenger đầy đủ tính năng, hỗ trợ nhiều tài khoản, thông báo Windows, phím tắt toàn cục và chạy nền trong System Tray.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">Multi</span>
+                        <span class="stat-label">Tài khoản</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">PIN</span>
+                        <span class="stat-label">Khóa app</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">Call</span>
+                        <span class="stat-label">Gọi điện</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="app-preview">
+                    <div class="preview-titlebar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="titlebar-text">Messenger</span>
+                    </div>
+                    <div class="preview-body">
+                        <div class="sidebar-preview"></div>
+                        <div class="chat-preview">
+                            <div class="chat-line wide"></div>
+                            <div class="chat-line"></div>
+                            <div class="chat-line short"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section">
+        <div class="container">
+            <h2>Tính năng</h2>
+            <p>Trải nghiệm Messenger Desktop gọn, nhanh và tách biệt tài khoản.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Đa tài khoản</h3>
+                    <p>Mỗi tài khoản dùng partition riêng cho cookies, cache và localStorage.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Quyền riêng tư</h3>
+                    <p>Hỗ trợ chặn trạng thái đã xem và đang nhập.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Gọi điện</h3>
+                    <p>Popup gọi điện/video call chạy trực tiếp trong Electron với quyền mic/camera.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>System Tray</h3>
+                    <p>Thu nhỏ xuống khay hệ thống, mở lại nhanh bằng phím tắt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="install" class="section">
+        <div class="container">
+            <h2>Cài đặt</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3>Cài dependencies</h3>
+                    <p>Chạy <code>npm install</code>.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3>Chạy app</h3>
+                    <p>Chạy <code>npm start</code>.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3>Build</h3>
+                    <p>Chạy <code>npm run build</code> để tạo file cài đặt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="shortcuts" class="section">
+        <div class="container">
+            <h2>Phím tắt</h2>
+            <div class="shortcut-card">
+                <kbd>Ctrl</kbd><span>+</span><kbd>Shift</kbd><span>+</span><kbd>M</kbd>
+                <p>Mở hoặc ẩn cửa sổ Messenger.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <div class="container">
+            <h2>FAQ</h2>
+            <div class="faq-list">
+                <details>
+                    <summary>Dữ liệu đăng nhập được lưu ở đâu?</summary>
+                    <p>Dữ liệu session được lưu cục bộ theo profile trên máy đang chạy app.</p>
+                </details>
+                <details>
+                    <summary>App có hỗ trợ gọi điện không?</summary>
+                    <p>Có. Cuộc gọi Messenger mở trong cửa sổ Electron riêng và dùng quyền microphone/camera của hệ thống.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2026 Messenger Desktop.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
